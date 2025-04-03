@@ -3,7 +3,7 @@
 A lightweight, extensible **Feature Flagging Framework** for Salesforce that allows controlled rollouts, gradual deployments, and easy management of feature toggles using **Custom Metadata** instead of hardcoded settings.  
 
 ## **How To Use?**  
-1️⃣ **Create a New Feature Flag** - Create a metadata record for your feature.  
+1️⃣ **Create a New Feature Flag** - Create a record in Feature_Flag__mdt for your feature.  
 2️⃣ **Call Framework** - Check feature status using below function call.  
 ```java
 Feature.isActive(FeatureName);
