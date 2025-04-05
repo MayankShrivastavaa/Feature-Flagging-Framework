@@ -1,4 +1,4 @@
-public class without sharing FeatureTypeFactory {
+public with sharing class FeatureTypeFactory {
     public static IFeatureType getFeatureType(String rolloutType) {
         try{
             String className = 'FeatureType_' + String.valueOf(rolloutType).replace(' ', '');
