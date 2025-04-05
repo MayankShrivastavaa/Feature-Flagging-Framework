@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Feature</members>
+        <members>FeatureType_CustomPermission</members>
+        <members>FeatureTypeFactory</members>
+        <members>IFeatureType</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Feature_Flag__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Feature_Flag__mdt.Rollout_Type__c</members>
+        <members>Feature_Flag__mdt.Rollout_Value__c</members>
+        <name>CustomMetadata</name>
+    </types>
+    <version>63.0</version>
+</Package>
