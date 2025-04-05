@@ -2,19 +2,21 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>Feature</members>
+        <members>FeatureTest</members>
+        <members>FeatureFlag</members>
+        <members>FeatureFlagTest</members>
         <members>FeatureType_CustomPermission</members>
+        <members>FeatureType_Disabled</members>
+        <members>FeatureType_Enabled</members>
+        <members>FeatureTypeTest</members>
         <members>FeatureTypeFactory</members>
+        <members>FeatureTypeFactoryTest</members>
         <members>IFeatureType</members>
         <name>ApexClass</name>
     </types>
     <types>
         <members>Feature_Flag__mdt</members>
         <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Feature_Flag__mdt.Rollout_Type__c</members>
-        <members>Feature_Flag__mdt.Rollout_Value__c</members>
-        <name>CustomMetadata</name>
     </types>
     <version>63.0</version>
 </Package>
