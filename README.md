@@ -9,6 +9,7 @@ A lightweight, extensible **Feature Flagging Framework** for Salesforce that all
 -  In-memory cache to avoid redundant queries
 -  Test-friendly with easy stubbing/mocking
 -  Open-Closed design — extend logic without modifying base classes
+
 ---
 ## 📌 How To Use?  
 1️⃣ **Create a New Feature Flag Record in Feature_Flag__mdt**  
@@ -17,7 +18,7 @@ A lightweight, extensible **Feature Flagging Framework** for Salesforce that all
 Feature.isActive(String FeatureName);
 ```
 3️⃣ **Sit back and observe your feature rolling out according to you ✅**   
-#### ⚠️ Behavior on Invalid Flags  
+## ⚠️ Behavior on Invalid Flags  
 This framework acts like a **black box** — it won’t throw errors to your code.  
 If something goes wrong internally, it simply returns `false`.  
 That means:
@@ -26,6 +27,7 @@ That means:
 - ❌ Any Internal Exception → `false`    
 `All such issues are logged in debug logs, making it easy to trace and fix them during testing.`
 `No exceptions are thrown or leaked — keeping production flow safe and stable.`
+
 ---
 ## ⚒️ Creating New Feature Flag  
 📍 Navigate to:
@@ -45,6 +47,7 @@ That means:
 | Enabled | Null |
 | Disabled | Null |
 | Custom Permission | Custom Permission Name |
+
 ---
 ## ❓Why This Framework?  
 Managing feature rollouts in Salesforce often involves **custom labels** or **custom settings**, requiring manual updates and cluttering the org with unnecessary entries. This framework provides:  
@@ -54,6 +57,7 @@ Managing feature rollouts in Salesforce often involves **custom labels** or **cu
 ✔ **Performance** – **Cached evaluations** for better efficiency  
 ✔ **Maintainability** – Follows **SOLID principles** for clean and structured code  
 ✔ **Devops Friendly** – Metadata Driven architecture makes it **deployable using metadata api & CI/CD pipelines**
+
 ---
 
 ## 🧰 Design Patterns Used  
@@ -68,23 +72,25 @@ Managing feature rollouts in Salesforce often involves **custom labels** or **cu
 
 ---
 ## 🔄  Current Rollout Strategies  
-✅ **Enabled** –  Global ON
-✅ **Disabled** –  Global OFF
-✅ **Custom Permission-Based** – Checks if a user has a custom permission 
+✅ **Enabled** –  Global ON  
+✅ **Disabled** –  Global OFF  
+✅ **Custom Permission-Based** – Checks if a user has a custom permission   
+
 ---
 ## 🧪 Planned Rollout Strategies
-🔜 **Profile-Based Rollout** – Target specific user profiles
-🔜 **Role-Based Rollout** – Enable features based on user role
-🔜 **Org-Based Rollout** – Rollout based on org ID or environment
-🔜 **% Based Rollout** – Gradually enable for a percentage of users
-🔜 **Time-Based Rollout** – Toggle features based on start/end date
-🔜 **Formula-Based Rollout** – Define rollout logic using formula fields
-🔜 **Custom Strategy** – Plug in your own logic using custom Apex class
+🔜 **Profile-Based Rollout** – Target specific user profiles  
+🔜 **Role-Based Rollout** – Enable features based on user role  
+🔜 **Org-Based Rollout** – Rollout based on org ID or environment  
+🔜 **% Based Rollout** – Gradually enable for a percentage of users  
+🔜 **Time-Based Rollout** – Toggle features based on start/end date  
+🔜 **Formula-Based Rollout** – Define rollout logic using formula fields  
+🔜 **Custom Strategy** – Plug in your own logic using custom Apex class  
+
 ---
 ## 🚧 Roadmap / Improvements
-[ ] **Multi feature support** - check multiple feature flag using single call
-[ ] **Admin UI to manage feature rollout** - Intrative UI for admin to update rollout stratgies in a single click
-[ ] **Logging / analytics per flag usage**  - Track how often and where flags are being evaluated
+[ ] **Multi feature support** - check multiple feature flag using single call  
+[ ] **Admin UI to manage feature rollout** - Intrative UI for admin to update rollout stratgies in a single click  
+[ ] **Logging / analytics per flag usage**  - Track how often and where flags are being evaluated  
 
 ## 🤝 Contributing
 Found a bug or have an idea for improvement? Feel free to raise an issue or open a pull request.
