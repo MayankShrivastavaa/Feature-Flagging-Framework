@@ -1,5 +1,6 @@
 public with sharing class FeatureFlag {
 
+    public static Map<Id, Map<String, Object>> userInfoMap = new Map<Id, Map<String, Object>>(); //Static Map to hold user info values as cached values.
     @testVisible
     Private Static Map<String, IFeatureType> FeatureTypeCache = new Map<String, IFeatureType>(); //Static Map to hold feature flag types instances as cahed values.
 
