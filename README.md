@@ -74,12 +74,11 @@ Managing feature rollouts in Salesforce often involves **custom labels** or **cu
 ## 🔄  Current Rollout Strategies  
 ✅ **Enabled** –  Global ON  
 ✅ **Disabled** –  Global OFF  
-✅ **Custom Permission-Based** – Checks if a user has a custom permission   
-
+✅ **Custom Permission-Based** – Checks if a user has a custom permission 
+✅ **Profile-Based Rollout** – Target specific user profiles  
+✅ **Role-Based Rollout** – Enable features based on user roles  
 ---
 ## 🧪 Planned Rollout Strategies
-🔜 **Profile-Based Rollout** – Target specific user profiles  
-🔜 **Role-Based Rollout** – Enable features based on user role  
 🔜 **Org-Based Rollout** – Rollout based on org ID or environment  
 🔜 **% Based Rollout** – Gradually enable for a percentage of users  
 🔜 **Time-Based Rollout** – Toggle features based on start/end date  

@@ -7,8 +7,8 @@ public with sharing class FeatureType_Role implements IFeatureType {
             if(RoleCache.containsKey(UserFeatureRole)){
                 return RoleCache.get(UserFeatureRole); // Check and return status if the user with role is in the cache.
             }
-            FeatureType_RollTypeValidator validator = new FeatureType_RollTypeValidator('Role', feature.Rollout_Value__c); // Create an instance of the validator.
-            RoleCache.put(UserFeatureRole, validator.validate()); // Initialize the cache with false.
+            FeatureType_RollTypeValidator validator = new FeatureType_RollTypeValidator(); // Create an instance of the validator.
+            RoleCache.put(UserFeatureRole, validator.validate('UserRole', feature.Rollout_Value__c)); // Initialize the cache with false.
             return RoleCache.get(UserFeatureRole); // Return the profile status.
             
         }catch(Exception e){
