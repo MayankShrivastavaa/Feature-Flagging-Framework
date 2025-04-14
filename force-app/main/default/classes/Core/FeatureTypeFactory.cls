@@ -1,8 +1,8 @@
 public with sharing class FeatureTypeFactory {
-    private Static Final String CLASS_PREFIX = 'FeatureType_';
+    private Static Final String ClassPrefix = 'FeatureType_';
     public static IFeatureType getFeatureType(String rolloutType) {
         try{
-            String className = CLASS_PREFIX + String.valueOf(rolloutType).replace(' ', '');
+            String className = ClassPrefix + String.valueOf(rolloutType).replace(' ', '');
             return (IFeatureType)Type.forName(className).newInstance();
         }catch(Exception e){
             System.debug('Class not found for feature type: ' + rolloutType);

@@ -6,9 +6,16 @@
         <members>FeatureFlag</members>
         <members>FeatureFlagTest</members>
         <members>FeatureType_CustomPermission</members>
+        <members>FeatureType_CustomPermissionTest</members>
         <members>FeatureType_Disabled</members>
         <members>FeatureType_Enabled</members>
-        <members>FeatureTypeTest</members>
+        <members>FeatureType_EnabledDisabledTest</members>
+        <members>FeatureType_Profile</members>
+        <members>FeatureType_ProfileTest</members>
+        <members>FeatureType_Role</members>
+        <members>FeatureType_RoleTest</members>
+        <members>FeatureType_RollTypeValidator</members>
+        <members>FeatureType_RollTypeValidatorTest</members>
         <members>FeatureTypeFactory</members>
         <members>FeatureTypeFactoryTest</members>
         <members>IFeatureType</members>

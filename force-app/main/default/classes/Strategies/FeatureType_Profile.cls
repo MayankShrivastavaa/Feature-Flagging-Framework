@@ -1,4 +1,6 @@
 public with sharing class FeatureType_Profile implements IFeatureType {
+
+    @testVisible
     static Map<String, boolean> profileCache = new Map<String, Boolean>(); //Static Map to hold profile values as cached values.
     public Boolean status(Feature_Flag__mdt feature) {
         try{
@@ -7,8 +9,8 @@ public with sharing class FeatureType_Profile implements IFeatureType {
             if(profileCache.containsKey(UserFeatureProfile)){
                 return profileCache.get(UserFeatureProfile); // Check and return status if the user with profile is in the cache.
             }
-            FeatureType_RollTypeValidator validator = new FeatureType_RollTypeValidator('Profile', feature.Rollout_Value__c); // Create an instance of the validator.
-            profileCache.put(UserFeatureProfile, validator.validate()); // Initialize the cache with false.
+            FeatureType_RollTypeValidator validator = new FeatureType_RollTypeValidator(); // Create an instance of the validator.
+            profileCache.put(UserFeatureProfile, validator.validate('Profile', feature.Rollout_Value__c)); // Initialize the cache with false.
             return profileCache.get(UserFeatureProfile); // Return the profile status.
             
         }catch(Exception e){

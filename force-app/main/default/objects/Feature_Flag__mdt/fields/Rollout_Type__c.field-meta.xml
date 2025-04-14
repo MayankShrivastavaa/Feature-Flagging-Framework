@@ -24,6 +24,16 @@
                 <default>false</default>
                 <label>Enabled</label>
             </value>
+            <value>
+                <fullName>Profile</fullName>
+                <default>false</default>
+                <label>Profile</label>
+            </value>
+            <value>
+                <fullName>Role</fullName>
+                <default>false</default>
+                <label>Role</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
