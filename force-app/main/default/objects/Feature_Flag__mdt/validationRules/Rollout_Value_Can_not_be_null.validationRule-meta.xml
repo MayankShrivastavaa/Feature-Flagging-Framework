@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rollout_Value_Can_not_be_null</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISPICKVAL(Rollout_Type__c, &apos;Enabled&apos;) || ISPICKVAL(Rollout_Type__c, &apos;Disabled&apos;)) &amp;&amp; ISBLANK(Rollout_Value__c)</errorConditionFormula>
+    <errorDisplayField>Rollout_Value__c</errorDisplayField>
+    <errorMessage>Rollout Value Should contain a value corresponding to Rollout Type</errorMessage>
+</ValidationRule>

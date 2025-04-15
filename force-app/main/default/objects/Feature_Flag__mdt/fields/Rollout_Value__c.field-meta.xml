@@ -3,6 +3,8 @@
     <fullName>Rollout_Value__c</fullName>
     <externalId>false</externalId>
     <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Not applicable for Enabled/Disabled.
+Add Single or Comma Seperated values for multiple checks.</inlineHelpText>
     <label>Rollout Value</label>
     <length>255</length>
     <required>false</required>
