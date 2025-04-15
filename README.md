@@ -77,12 +77,12 @@ Managing feature rollouts in Salesforce often involves **custom labels** or **cu
 ✅ **Custom Permission-Based** – Checks if a user has a custom permission  
 ✅ **Profile-Based Rollout** – Target specific user profiles  
 ✅ **Role-Based Rollout** – Enable features based on user roles  
+✅ **Time-Based Rollout** – Toggle features based on start/end date  
 
 ---
 ## 🧪 Planned Rollout Strategies
 🔜 **Org-Based Rollout** – Rollout based on org ID or environment  
 🔜 **% Based Rollout** – Gradually enable for a percentage of users  
-🔜 **Time-Based Rollout** – Toggle features based on start/end date  
 🔜 **Formula-Based Rollout** – Define rollout logic using formula fields  
 🔜 **Custom Strategy** – Plug in your own logic using custom Apex class  
 

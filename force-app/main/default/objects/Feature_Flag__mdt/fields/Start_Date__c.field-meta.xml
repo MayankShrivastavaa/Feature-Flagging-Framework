@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Date__c</fullName>
+    <description>Feature Start Date</description>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <inlineHelpText>Enter the date when the feature should start.
+Blank if permanent</inlineHelpText>
+    <label>Start Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>

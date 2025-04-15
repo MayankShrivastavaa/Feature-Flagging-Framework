@@ -15,6 +15,15 @@ public with sharing class FeatureFlag {
                 return false;
             }
 
+            if(feature.Start_date__c != null && feature.Start_date__c >= System.today()){
+                System.debug('Feature is not active yet');
+                return false; //Feature is not active yet
+            }
+            if(feature.End_date__c != null && feature.End_date__c < System.today()){
+                System.debug('Feature is not active anymore');
+                return false; //Feature is not active anymore
+            }
+
             IFeatureType featureType = FeatureTypeCache.containsKey(feature.Rollout_Type__c) ? FeatureTypeCache.get(feature.Rollout_Type__c) : FeatureTypeFactory.getFeatureType(feature.Rollout_Type__c); //Get Instance of feature type
             
             if(!FeatureTypeCache.containsKey(feature.Rollout_Type__c)) {
